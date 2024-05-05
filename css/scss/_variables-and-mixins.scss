@@ -1,0 +1,47 @@
+// ==============> Variáveis & mixins <==============
+
+// ****** Variáveis para cores ******
+
+// Cores primária
+$brand-color-primary-01: #0071e3;
+$brand-color-primary-02: #0052a2;
+$brand-color-primary-03: #afd5fb;
+
+// Cores neutra
+$neutral-color-01: #fafafa;
+$neutral-color-02: #ebedf0;
+$neutral-color-03: #dbdde1;
+$neutral-color-04: #86868b;
+$neutral-color-05: #8d949e;
+$neutral-color-06: #444950;
+$neutral-color-07: #1c1e21;
+
+// Cores overlay
+$overlay-white-01: #ffffff;
+$overlay-dark-01: #090e17;
+$overlay-dark-02: #050404;
+
+// Cores background
+$background-color-1: rgba(0, 113, 227, 10%);
+$background-color-2: rgba(129, 186, 244, 12%);
+$background-color-3: rgba(255, 255, 255, 80%);
+
+// ****** Mixin para tipografia ******
+
+// Mixin para títulos
+
+// Mixin para textos
+@mixin type($size, $weight, $line-height: 150%) {
+  @if $size == lg {
+    font-size: 1.125rem;
+  } @else if $size == base {
+    font-size: 1rem;
+  } @else if $size == sm {
+    font-size: 0.875rem;
+  } @else if $size == xs {
+    font-size: 0.75rem;
+  }
+
+  font-weight: $weight;
+  line-height: $line-height;
+}

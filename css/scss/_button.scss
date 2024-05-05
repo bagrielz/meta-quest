@@ -1,0 +1,123 @@
+// ==============> Botões <==============
+
+// Estilos padrões do botão
+%btn-base {
+  display: flex;
+  font-family: "SF Pro Display", sans-serif;
+
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+
+  @include type(xs, 400);
+}
+
+// ****** Estilos do botão primário ******
+
+// Sem ícone
+@mixin primary($size) {
+  @extend %btn-base;
+  background-color: $brand-color-primary-01;
+  color: $overlay-white-01;
+  transition: ease-in-out 0.5s;
+
+  &:hover {
+    background-color: $brand-color-primary-02;
+  }
+
+  @if $size == l {
+    padding: 8px 14px;
+  } @else if $size == m {
+    padding: 6px 12px;
+  } @else if $size == s {
+    padding: 4px 8px;
+  }
+}
+
+// Com ícone
+@mixin primary-icon($size) {
+  @extend %btn-base;
+  background-color: $brand-color-primary-01;
+  color: $overlay-white-01;
+
+  align-items: center;
+  gap: 8px;
+  transition: ease-in-out 0.5s;
+
+  &:hover {
+    background-color: $brand-color-primary-02;
+  }
+
+  @if $size == l {
+    padding: 8px 14px;
+  } @else if $size == m {
+    padding: 6px 12px;
+  } @else if $size == s {
+    padding: 4px 8px;
+  }
+}
+
+// ****** Estilos do botão secundário ******
+
+// Sem ícone
+@mixin secondary($size) {
+  @extend %btn-base;
+  background: transparent;
+
+  border: 1px solid $brand-color-primary-01;
+  color: $brand-color-primary-01;
+  transition: ease-in-out 0.5s;
+
+  align-items: center;
+
+  &:hover {
+    color: $overlay-white-01;
+    background-color: $brand-color-primary-02;
+  }
+
+  @if $size == l {
+    padding: 8px 14px;
+  } @else if $size == m {
+    padding: 6px 12px;
+  } @else if $size == s {
+    padding: 4px 8px;
+  }
+}
+
+// Com ícone
+@mixin secondary-icon($size) {
+  @extend %btn-base;
+  background: transparent;
+
+  border-color: 1px solid $brand-color-primary-01;
+  color: $brand-color-primary-01;
+  transition: ease-in-out 0.5s;
+
+  align-items: center;
+  gap: 8px;
+  transition: ease-in-out 0.5s;
+
+  &:hover {
+    color: $overlay-white-01;
+    background-color: $brand-color-primary-02;
+  }
+
+  @if $size == l {
+    padding: 8px 14px;
+  } @else if $size == m {
+    padding: 6px 12px;
+  } @else if $size == s {
+    padding: 4px 8px;
+  }
+}
+
+// ****** Estados do ícone ******
+
+.active {
+  width: 16px;
+  height: 16px;
+}
+
+.disabled {
+  display: none;
+}
