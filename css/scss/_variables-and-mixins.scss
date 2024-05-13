@@ -29,9 +29,28 @@ $background-color-3: rgba(255, 255, 255, 80%);
 // ****** Mixin para tipografia ******
 
 // Mixin para títulos
+@mixin type-heading($size) {
+  @if $size == h1 {
+    font-size: 5rem;
+  } @else if $size == h2 {
+    font-size: 4.0625rem;
+  } @else if $size == h3 {
+    font-size: 3.5rem;
+  } @else if $size == h4 {
+    font-size: 3rem;
+  } @else if $size == h5 {
+    font-size: 2.5rem;
+  } @else if $size == h6 {
+    font-size: 2rem;
+  } @else if $size == h7 {
+    font-size: 1.5rem;
+  }
+
+  line-height: 120%;
+}
 
 // Mixin para textos
-@mixin type($size, $weight, $line-height: 150%) {
+@mixin type-text($size, $line-height: 150%) {
   @if $size == lg {
     font-size: 1.125rem;
   } @else if $size == base {
@@ -42,6 +61,5 @@ $background-color-3: rgba(255, 255, 255, 80%);
     font-size: 0.75rem;
   }
 
-  font-weight: $weight;
   line-height: $line-height;
 }

@@ -6,11 +6,15 @@
 
   background-color: $brand-color-primary-01;
   color: $overlay-white-01;
-  @include type(xs, 400);
+  @include type-text(xs);
   div {
     display: flex;
     align-items: center;
     gap: 8px;
+    img {
+      width: 16px;
+      height: 16px;
+    }
     @include device(s) {
       &:nth-child(even) {
         display: none;
@@ -37,7 +41,7 @@
     align-items: center;
     gap: 8px;
     li {
-      @include type(xs, 500);
+      @include type-text(xs);
       padding: 12px 8px;
       cursor: pointer;
       &:nth-child(-n + 2) {
@@ -67,7 +71,7 @@
       cursor: pointer;
       background-color: $brand-color-primary-01;
       color: $overlay-white-01;
-      @include type(xs, 400);
+      @include type-text(xs);
       transition: ease-in-out 0.5s;
       &:hover {
         background-color: $brand-color-primary-02;

@@ -1,0 +1,64 @@
+// ==============> Estilo do restante das demais seções <==============
+
+// ****** Hero ******
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  .bkg-video {
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    video {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      177deg,
+      rgba(43, 43, 43, 0) 3.89%,
+      rgba(0, 0, 0, 0.5) 66.99%
+    );
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 29px;
+
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    h1 {
+      color: $overlay-white-01;
+      font-weight: 500;
+      @include type-heading(h3);
+      @include device(s) {
+        @include type-heading(h6);
+      }
+    }
+    p {
+      color: $overlay-white-01;
+      @include type-text(lg, 140%);
+      @include device(s) {
+        @include type-text(base);
+      }
+    }
+    .primary-btn {
+      @include primary(l);
+    }
+    .value {
+      margin-top: 27px;
+      color: $overlay-white-01;
+      @include type-text(lg);
+      @include device(s) {
+        @include type-text(base);
+      }
+    }
+  }
+}
