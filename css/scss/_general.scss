@@ -62,3 +62,40 @@
     }
   }
 }
+
+// ****** Technology ******
+.technology-section {
+  display: flex;
+  gap: 151px;
+  padding: 64px 46px;
+  @include device(m) {
+    gap: 32px;
+    padding: 46px 16px;
+    flex-direction: column;
+  }
+  @include device(s) {
+    gap: 24px;
+    padding: 46px 16px;
+  }
+  span {
+    text-transform: uppercase;
+    color: $neutral-color-06;
+    @include type-text(sm);
+  }
+  h5 {
+    color: $overlay-dark-02;
+    font-weight: 700;
+    margin-bottom: 12px;
+    @include type-heading(h5);
+    @include device(m) {
+      @include type-heading(h6);
+    }
+    @include device(s) {
+      @include type-heading(h7);
+    }
+  }
+  p {
+    color: $neutral-color-05;
+    @include type-text(base);
+  }
+}
