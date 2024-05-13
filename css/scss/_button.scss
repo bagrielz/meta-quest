@@ -9,7 +9,7 @@
   border-radius: 40px;
   cursor: pointer;
 
-  @include type(xs, 400);
+  @include type-text(xs);
 }
 
 // ****** Estilos do botão primário ******
