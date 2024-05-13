@@ -27,7 +27,7 @@ const App = () => {
       <Header />
       <main className="hero-section">
         <div className="bkg-video">
-          <video src={Video}></video>
+          <video src={Video} autoPlay muted loop></video>
         </div>
 
         <div className="content">

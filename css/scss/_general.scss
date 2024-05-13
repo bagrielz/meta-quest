@@ -34,6 +34,10 @@
     text-align: center;
     position: relative;
     z-index: 1;
+    @include device(s) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
     h1 {
       color: $overlay-white-01;
       font-weight: 500;
