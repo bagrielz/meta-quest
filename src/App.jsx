@@ -48,6 +48,20 @@ const App = () => {
           <span className="value">A partir de R$ 249,90</span>
         </div>
       </main>
+      <section className="technology-section">
+        <span>Tecnologia virtual</span>
+        <div>
+          <h5>
+            Tecnologia de outro mundo com
+            <br /> preço dentro da sua realidade
+          </h5>
+          <p>
+            Com a inovadora realidade mista de alta resolução, você pode
+            interagir facilmente com o mundo virtual, mantendo a presença em seu
+            espaço físico em cores de alta definição.
+          </p>
+        </div>
+      </section>
     </div>
   );
 };
