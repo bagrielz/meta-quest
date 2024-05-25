@@ -8,10 +8,12 @@ import Button from "./Components/Button";
 import Video from "./assets/video.mp4";
 import Loader from "./assets/Loader.png";
 import SmallLoader from "./assets/SmallLoader.png";
+import MetaQuestPro from "./assets/MetaQuestPro.png";
 
 // Ícones
 import Energy from "./assets/icons/Energy.svg";
 import Add from "./assets/icons/Add.svg";
+import VisionPro from "./assets/icons/VisionPro.svg";
 
 const App = () => {
   const [isMobile, setIsMobile] = React.useState(window.innerWidth <= 760);
@@ -115,6 +117,27 @@ const App = () => {
               />
             )}
           </div>
+        </div>
+      </section>
+      <section className="new-possiblities-section">
+        <div className="new-possibilities-description">
+          <span>Novas possibilidades</span>
+          <div>
+            <h4>Um fone de ouvido, tantas possibilidades</h4>
+            <p>
+              Meta Quest Pro reúne o que há de mais moderno em VR para mudar as
+              perspectivas sobre como projetamos para mundos físicos e virtuais.
+              Usando pintura VR e vários aplicativos de estúdio, o processo
+              criativo vai para um outro nível.
+            </p>
+            <button>
+              <img src={VisionPro} alt="Ícone do Vision Pro" />
+              Visualizar Meta Vision Pro 3D
+            </button>
+          </div>
+        </div>
+        <div className="meta-quest-pro-image">
+          <img src={MetaQuestPro} alt="Imagem de um Meta Quest Pro" />
         </div>
       </section>
     </div>

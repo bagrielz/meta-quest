@@ -1,6 +1,6 @@
-// ==============> Estilo do restante das demais seções <==============
+// ========================================> Seções <========================================
 
-// ****** Hero ******
+// *********************** Hero *************************
 .hero-section {
   width: 100%;
   height: 100vh;
@@ -67,7 +67,7 @@
   }
 }
 
-// ****** Technology ******
+// *********************** Technology *************************
 .technology-section {
   display: flex;
   gap: 151px;
@@ -107,7 +107,7 @@
   }
 }
 
-// ****** Loading ******
+// *********************** Loading *************************
 .loading-section {
   width: 100%;
   background-color: $overlay-dark-02;
@@ -215,9 +215,92 @@
   }
   .loader-image {
     position: absolute;
-    right: 48px;
+    right: 64px;
     @include device(m) {
       bottom: -64px;
+      right: 24px;
     }
+  }
+}
+
+// *********************** New possibilities *************************
+.new-possiblities-section {
+  width: 100%;
+}
+
+.new-possibilities-description {
+  display: flex;
+  gap: 151px;
+  padding: 96px 0 46px 46px;
+  border-bottom: 1px solid $neutral-color-02;
+  @include device(m) {
+    flex-direction: column;
+    gap: 24px;
+    padding: 64px 16px 46px 16px;
+  }
+  span {
+    text-transform: uppercase;
+    color: $neutral-color-06;
+    @include type-text(sm);
+  }
+  div {
+    max-width: 561px;
+    h4 {
+      @include type-heading(h4);
+      color: $overlay-dark-02;
+      font-weight: 700;
+      margin-bottom: 12px;
+      @include device(m) {
+        @include type-heading(h6);
+      }
+    }
+    p {
+      @include type-text(base);
+      color: $neutral-color-05;
+      margin-bottom: 24px;
+    }
+    button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 8px 14px;
+      border: 1px solid $brand-color-primary-01;
+      background-color: transparent;
+      border-radius: 40px;
+
+      @include type-text(xs);
+      color: $brand-color-primary-01;
+      font-weight: 700;
+
+      cursor: pointer;
+      transition: ease-in-out 0.5s;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+      &:hover {
+        background-color: $brand-color-primary-02;
+        color: $neutral-color-01;
+      }
+    }
+  }
+}
+
+.meta-quest-pro-image {
+  width: 100%;
+  margin-top: 14px;
+  margin-bottom: 196px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include device(m) {
+    margin-bottom: 56px;
+  }
+  img {
+    max-width: 100%;
+    display: block;
   }
 }
