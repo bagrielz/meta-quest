@@ -86,21 +86,24 @@
     color: $neutral-color-06;
     @include type-text(sm);
   }
-  h5 {
-    color: $overlay-dark-02;
-    font-weight: 700;
-    margin-bottom: 12px;
-    @include type-heading(h5);
-    @include device(m) {
-      @include type-heading(h6);
+  div {
+    max-width: 589px;
+    h5 {
+      color: $overlay-dark-02;
+      font-weight: 700;
+      margin-bottom: 12px;
+      @include type-heading(h5);
+      @include device(m) {
+        @include type-heading(h6);
+      }
+      @include device(s) {
+        @include type-heading(h7);
+      }
     }
-    @include device(s) {
-      @include type-heading(h7);
+    p {
+      color: $neutral-color-05;
+      @include type-text(base);
     }
-  }
-  p {
-    color: $neutral-color-05;
-    @include type-text(base);
   }
 }
 
