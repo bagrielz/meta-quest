@@ -5,7 +5,8 @@ import Header from "./Components/Header";
 import Button from "./Components/Button";
 
 // Vídeos e imagens
-import Video from "./assets/video.mp4";
+import HomeVideo from "./assets/home-video.mov";
+import Snow from "./assets/snow.mov";
 import Loader from "./assets/Loader.png";
 import SmallLoader from "./assets/SmallLoader.png";
 import MetaQuestPro from "./assets/MetaQuestPro.png";
@@ -35,7 +36,7 @@ const App = () => {
       <Header />
       <main className="hero-section">
         <div className="bkg-video">
-          <video src={Video} autoPlay muted loop></video>
+          <video src={HomeVideo} autoPlay muted loop></video>
         </div>
 
         <div className="main-content">
@@ -69,10 +70,13 @@ const App = () => {
       </section>
       <section className="loading-section">
         <div className="loading-column-left">
-          <div className="loading-information">
-            <span>Carregamento</span>
-            <span>10x</span>
-            <span>mais rápido</span>
+          <div className="loading-bkg-video">
+            <video src={Snow} autoPlay muted loop></video>
+            <div className="loading-information">
+              <span>Carregamento</span>
+              <span>10x</span>
+              <span>mais rápido</span>
+            </div>
           </div>
 
           <div className="loading-description">

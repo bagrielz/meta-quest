@@ -87,7 +87,7 @@
     @include type-text(sm);
   }
   div {
-    max-width: 589px;
+    max-width: 630px;
     h5 {
       color: $overlay-dark-02;
       font-weight: 700;
@@ -118,7 +118,7 @@
   &::after {
     content: "";
     position: absolute;
-    width: 80%;
+    width: 100%;
     height: 100%;
     background: url("../../src/assets/Smoke.png") center no-repeat;
     background-position: bottom left;
@@ -136,10 +136,21 @@
   border-right: 1px solid $neutral-color-07;
 }
 
+.loading-bkg-video {
+  position: relative;
+  video {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .loading-information {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
   padding: 123px 0 98px 0;
   background-image: url("../../src/assets/Waves.svg");
@@ -244,7 +255,7 @@
     @include type-text(sm);
   }
   div {
-    max-width: 561px;
+    max-width: 610px;
     h4 {
       @include type-heading(h4);
       color: $overlay-dark-02;
@@ -256,7 +267,7 @@
     }
     p {
       @include type-text(base);
-      color: $neutral-color-05;
+      color: $neutral-color-06;
       margin-bottom: 24px;
     }
     button {
